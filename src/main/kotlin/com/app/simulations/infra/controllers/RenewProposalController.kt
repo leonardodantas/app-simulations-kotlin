@@ -14,7 +14,7 @@ class RenewProposalController(
     private val renewProposal: IRenewProposal
 ) {
 
-    @PostMapping
+    @PutMapping
     @ResponseStatus(HttpStatus.OK)
     fun renewProposal(@Valid @RequestBody body: RenewProposalRequest) {
         renewProposal.renew(body)
