@@ -27,7 +27,7 @@ positivo se o cliente não possuir nenhum empréstimo ativo.
 | Atributo   | Tipo       | Descrição                           |Validações|
 | :---------- | :--------- | :---------------------------------- |----|
 | `birthDate` | `Date` | **Obrigatório**. Data de nascimento |Todo cliente precisa ter no mínimo 18 anos|
-| `cep` | `String` | **Obrigatório**. CEP do Cliente |O cliente deve possuir um CEP valido|
+| `cep` | `String` | **Obrigatório**. CEP do Cliente |O cliente deve possuir um CEP valido apenas com números|
 | `cpf` | `String` | **Obrigatório**. CPF do cliente |Deve estar em um formato valido|
 | `income` | `BigDecimal` | **Obrigatório**. Renda do cliente |Deve ser maior que 0 e não nulo|
 | `name` | `String` | **Obrigatório**. Nome do cliente |Não deve ser nulo e nem branco, com o tamanho mínimo de 10 e máximo de 60 |
@@ -45,7 +45,7 @@ que o mesmo realize simulações.
 | Atributo   | Tipo       | Descrição                           |Validações|
 | :---------- | :--------- | :---------------------------------- |----|
 | `birthDate` | `Date` | **Obrigatório**. Data de nascimento |Todo cliente precisa ter no minino 18 anos|
-| `cep` | `String` | **Obrigatório**. CEP do Cliente |O cliente deve possuir um CEP valido|
+| `cep` | `String` | **Obrigatório**. CEP do Cliente |O cliente deve possuir um CEP valido apenas com números|
 | `cpf` | `String` | **Obrigatório**. CPF do cliente |Deve estar em um formato valido|
 | `income` | `BigDecimal` | **Obrigatório**. Renda do cliente |Deve ser maior que 0 e não nulo|
 | `loanAmount` | `BigDecimal` | **Obrigatório**. Valor do emprestimo |Deve ser um número positivo e maior que zero |
@@ -75,7 +75,7 @@ proposta é verificado se o cliente ainda é elegível na antiga modalidade, cas
 | Atributo   | Tipo       | Descrição                           |Validações|
 | :---------- | :--------- | :---------------------------------- |----|
 | `birthDate` | `Date` | **Obrigatório**. Data de nascimento |Todo cliente precisa ter no mínimo 18 anos|
-| `cep` | `String` | **Obrigatório**. CEP do Cliente |O cliente deve possuir um CEP valido|
+| `cep` | `String` | **Obrigatório**. CEP do Cliente |O cliente deve possuir um CEP valido apenas com números|
 | `cpf` | `String` | **Obrigatório**. CPF do cliente |Deve estar em um formato valido e não possuir empréstimo ativo|
 | `income` | `BigDecimal` | **Obrigatório**. Renda do cliente |Deve ser maior que 0 e não nulo|
 | `proposalId` | `String` | **Obrigatório**. ID da proposta |Deve ser um ID valido e a proposta ainda deve ser renovável |
