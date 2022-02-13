@@ -118,7 +118,7 @@ um status code 404
 ```
 
 Retorna todas as propostas disponíveis para o cliente através do seu CPF, caso não exista será retornado 
-um status code 404
+um status code 204
 | Parâmetro   | Tipo       | Descrição                           
 | :---------- | :--------- | :------------------------ 
 | `cpf` | `String` | **Obrigatório**. CPF do cliente |
